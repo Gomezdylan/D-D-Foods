@@ -91,7 +91,6 @@ section{
     gap: 40px;
     width: 80%;
     margin: 0 auto;
-    background-color: lightgray;
     
 }
 section h1{
@@ -114,4 +113,7 @@ section button{
     margin-top: 20px;
     padding-top: 30px;
     width: 40%;
+}
+body{
+    background-color: lightgray;
 }
