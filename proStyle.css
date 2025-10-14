@@ -1,33 +1,87 @@
+
 .header{
-    position: fixed;
     top:  0;
     left:  0;
     width: 100%;
     height: 120px;
-    padding: 35px 12%;
-    background: rgb(0, 0, 0);
+    padding: 10px 5%;
+    background: rgb(238, 171, 27);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .logo{
     font-size: 30px;
-    color: gray;
+    color: rgb(0, 0, 0);
     font-weight: 5000;
+    text-decoration: none;
 }
 .navbar{
     flex: 1;
     display: flex;
     justify-content: space-evenly;
+  
 }
 .navbar a{
     font-size: 18px;
-    color: Gold;
+    color: rgb(0, 0, 0);
     justify-content: space-evenly;
 }
 .navbar a:hover,
 .navbar a.active{
-    color: Gold;
+    color: rgb(3, 3, 2);
     border-bottom: 3px solid Gray;
+}
+
+h2{
+    font-weight: 4000;
+}
+
+.center{
+    text-align: center;
+    padding: 10px 0 20px 0 
+}
+
+.menu-table {
+    border: 2px solid black;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.drink-table{
+    border: 2px solid black;
+    width: 40%;
+    margin: 20px 0;
+    text-align: center;
+    margin: auto;
+}
+
+.menu-table th,
+.menu-table td,
+.drink-table th,
+.drink-table td{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.menu-bg{
+    background-color: rgb(232, 221, 243);
+}
+
+.cta-button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: lightblue;
+    padding: .5em .75em;
+    border-radius: .5em;
+    font-weight: 600;
 }
