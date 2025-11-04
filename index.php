@@ -22,6 +22,40 @@
 
 
     <!-- <TABLE class="menu-table">
+<h2 class="center">Entrees</h2>
+<div class="content">
+
+  <div class="card">
+    <img src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https%3A%2F%2Farc-anglerfish-washpost-prod-washpost.s3.amazonaws.com%2Fpublic%2FM6HASPARCZHYNN4XTUYT7H6PTE.jpg?h=982&w=1200" width="100%" alt="Hamburger">
+    <h3>Hamburger</h3>
+    <p><strong>Price:</strong> $10.99</p>
+    <p><strong>Calories:</strong> 900</p>
+  </div>
+
+  <div class="card">
+    <img src="https://newyorkprimebeef.com/cdn/shop/files/new-york-prime-beef-steaks-Dry-Aged-USDA-Prime-Boneless-Ny-Strip-Cooked-Horiz.jpg?v=1756232491" width="100%" alt="New York Strip">
+    <h3>New York Strip</h3>
+    <p><strong>Price:</strong> $19.99</p>
+    <p><strong>Calories:</strong> 1100</p>
+  </div>
+
+  <div class="card">
+    <img src="https://nutritionrefined.com/wp-content/uploads/2023/08/homemade-garden-salad-featured.jpg" width="100%" alt="Salad">
+    <h3>Salad</h3>
+    <p><strong>Price:</strong> $8.99</p>
+    <p><strong>Calories:</strong> 350</p>
+  </div>
+
+  <div class="card">
+    <img src="https://feedgrump.com/wp-content/uploads/2024/01/dairy-queen-chicken-strips-feature.jpg" width="100%" alt="Chicken Strips">
+    <h3>Chicken Strips</h3>
+    <p><strong>Price:</strong> $9.99</p>
+    <p><strong>Calories:</strong> 600</p>
+  </div>
+</div>
+
+     <h2 class="center">Entrees</h2>
+     <TABLE class="menu-table" >
         <TR>
             <TH> </TH>
             <TH>Food</TH>
@@ -117,6 +151,7 @@
     </TABLE>
     </div>
 </body>
+
 
 
 </html>
