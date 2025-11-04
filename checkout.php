@@ -8,7 +8,7 @@
         <a href class="logo"> D & D Products</a>
 
         <nav class = "navbar">
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
             <a href="#" class="active">Checkout</a>
             <a href="history.html">History</a>
             <a href="login.html">Login</a>
@@ -76,7 +76,7 @@
         <div>
             <h1>Payment</h1>
             <div>
-                <img src="burger3.jpg" height="300" width="300"/>
+                <img src="img/burger3.jpg" height="300" width="300"/>
                 <h1 id="total">Total Payment: $0.00 </h1>
             </div>
             <input type="text" style="height: 40px;"placeholder="Enter discount or code"> <!--Put a button here-->
