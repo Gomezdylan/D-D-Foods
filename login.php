@@ -35,6 +35,11 @@
              $_SESSION['r_success']= false;
             }
 
+            if (isset($_SESSION['LogIn']) && $_SESSION['LogIn'] == false){
+                echo "<div class='alert alert-danger'> Log in first to place an order </div>";
+                $_SESSION['LogIn']= true;  
+            }
+
             require_once "server.php";
 
             if (isset($_POST["Login"])) {
@@ -48,6 +53,7 @@
                 if ($user) {
                     if (password_verify($password, $user["password"])) {
                         $_SESSION['username'] = $user["person_name"];
+                        $_SESSION['id'] = $user["person_id"];
                         header("Location: index.php");
                         exit(); 
                     } else {
