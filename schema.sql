@@ -27,6 +27,21 @@ VALUES
     ('Salad', 'entree', 8.99, 350),
     ('Chicken Strips', 'entree', 9.99, 600);
 
+INSERT INTO
+    Food (food_name, category, current_price, calories)
+VALUES
+    ('Lemonade', 'drink', 2.99, 90),
+    ('Soda', 'drink', 1.99, 100),
+    ('Beer', 'drink', 5.99, 150),
+    ('Tea', 'drink', 1.99, 20);
+
+INSERT INTO
+    Food (food_name, category, current_price, calories)
+VALUES
+    ('Cake', 'dessert', 4.99, 290),
+    ('Banana Split', 'dessert', 3.99, 180),
+    ('Pie', 'dessert', 5.99, 350);
+
 CREATE TABLE
     if NOT EXISTS Orders (
         order_id INT AUTO_INCREMENT PRIMARY KEY,
