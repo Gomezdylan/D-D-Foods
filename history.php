@@ -9,10 +9,10 @@
         <a href class="logo"> D & D Foods</a>
 
         <nav class = "navbar">
-            <a href="index.html">Menu</a>
+            <a href="index.php">Menu</a>
             <a href="checkout.php">Checkout</a>
             <a href="#" class="active">History</a>
-            <a href="login.html">Login</a>
+            <a href="login.php">Login</a>
         </nav>
         <!--Shows item details image and a Buy Button thats it-->
     </header>
