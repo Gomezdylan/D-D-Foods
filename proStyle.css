@@ -11,6 +11,7 @@
     align-items: center;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -153,4 +154,10 @@ table, tr, td, th{
     padding: 8px;
     margin-top: 20px;
     margin-bottom: 50px;
+}
+
+.userbox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
 }
