@@ -1,14 +1,18 @@
 <?php
+session_start();
 include "server.php";
 
 // Adding everything into Order_Items part of database
-$person_name = $_POST['person_name'];
-
-$conn->query("INSERT INTO Person (person_name) VALUES ('$person_name')");
+ $person_name = $_POST['person_name'];
 
 $person_id = $conn->insert_id;
 
-$conn->query("INSERT INTO Orders (person_id, status) VALUES ($person_id, 'paid')");
+if (isset($_SESSION['id']))
+    $conn->query("INSERT INTO Orders (person_id, status) VALUES ({$_SESSION['id']}, 'paid')");
+else{
+   $_SESSION['LogIn'] = false;
+   header("Location: login.php"); 
+}
 
 $order_id = $conn->insert_id;
 
