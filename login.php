@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 
 <head>
@@ -16,7 +19,7 @@
         <nav class="navbar">
             <a href="index.php">Menu</a>
             <a href="checkout.php">Checkout</a>
-            <a href="history.html">History</a>
+            <a href="history.php">History</a>
             <a href="login.php" class="active">Login</a>
         </nav>
     </header>
@@ -26,6 +29,11 @@
 <body>
     <div class="container">
         <?php
+
+            if (isset($_SESSION['r_success']) && $_SESSION['r_success'] == true){
+             echo "<div class='alert alert-success'> Registered Successfully </div>";
+             $_SESSION['r_success']= false;
+            }
 
             require_once "server.php";
 
@@ -38,7 +46,8 @@
                 $user = mysqli_fetch_array($result, MYSQLI_ASSOC);
 
                 if ($user) {
-                    if (password_verify($password, $user["password"]) /*$password === $user["password"]*/) {
+                    if (password_verify($password, $user["password"])) {
+                        $_SESSION['username'] = $user["person_name"];
                         header("Location: index.php");
                         exit(); 
                     } else {

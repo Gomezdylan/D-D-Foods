@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -13,9 +17,9 @@
     <header class="header">
         <a href="#" class="logo">D & D Foods</a>
         <nav class="navbar">
-            <a href="index.html">Menu</a>
-            <a href="checkout.html">Checkout</a>
-            <a href="history.html">History</a>
+            <a href="index.php">Menu</a>
+            <a href="checkout.php">Checkout</a>
+            <a href="history.php">History</a>
             <a href="login.php">Login</a>
         </nav>
     </header>
@@ -64,8 +68,8 @@
                     if($prepare){
                         mysqli_stmt_bind_param($stmt, "sss",$name, $email, $passwordHash);
                         mysqli_stmt_execute($stmt);
+                        $_SESSION['r_success'] = true;
                         header("Location: login.php");
-                        echo "<div class='alert alert-success'> Registered Successfully </div>";
                     } else {
                         die("Registerion Unsuccessful");
                     }

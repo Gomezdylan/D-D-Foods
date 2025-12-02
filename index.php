@@ -1,20 +1,42 @@
+<?php
+    session_start();
+    if (isset($_POST['Logout'])){
+        session_destroy();
+        header("Location: index.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>D & D Foods Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="proStyle.css">
 </head>
 
 <body class="menu-bg">
+
     <header class="header">
         <a href="#" class="logo">D & D Foods</a>
         <nav class="navbar">
             <a href="index.php" class="active">Menu</a>
             <a href="checkout.php">Checkout</a>
-            <a href="history.html">History</a>
-            <a href="login.php">Login</a>
+            <a href="history.php">History</a>
+
+            <?php 
+                if (isset($_SESSION['username'])){
+                    echo '<div class = "userbox">';
+                        echo '<a href="">Hi <strong>'.$_SESSION['username']. '</strong></a>';
+                        echo '<form method ="post">';
+                            echo '<input type="submit" value="Logout" name="Logout" class="btn btn-danger">';
+                        echo '</form>';
+                    echo '</div>';
+                } else 
+                    echo '<a href="login.php">Login</a>';
+            ?>
         </nav>
     </header>
 
