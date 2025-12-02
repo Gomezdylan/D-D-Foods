@@ -80,7 +80,7 @@
         <h1>Payment</h1>
 
         <div>
-            <img src="logo.png" height="450" width="450"/>
+            <img src="img/logo.png" height="450" width="450"/>
             <h1 id="total">Total Payment: $0.00</h1>
         </div>
 

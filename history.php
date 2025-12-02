@@ -37,23 +37,23 @@
                     // Switch statement to grab recent items and show the picture
                     switch (strtolower($row['food_name'])) {
                         case "hamburger":
-                            $image = "burger.jpg";
+                            $image = "img/burger.jpg";
                             break;
 
                         case "chicken strips":
-                            $image = "chicken2.jpeg";
+                            $image = "img/chicken2.jpeg";
                             break;
 
                         case "new york strip":
-                            $image = "steak.jpg";
+                            $image = "img/steak.jpg";
                             break;
 
                         case "salad":
-                            $image = "salad.jpg";
+                            $image = "img/salad.jpg";
                             break;
 
                         default:
-                            $image = "burger.jpg"; // fallback image might get rid of 
+                            $image = "img/burger.jpg"; // fallback image might get rid of 
                             break;
                     }
 
@@ -63,22 +63,22 @@
                         switch ($food) {
                             case "new york strip":
                                 $recommendation_name = "Salad";
-                                $recommendation_image = "salad.jpg";
+                                $recommendation_image = "img/salad.jpg";
                                 break;
                 
                             case "salad":
                                 $recommendation_name = "New York Strip";
-                                $recommendation_image = "steak.jpg";
+                                $recommendation_image = "img/steak.jpg";
                                 break;
                 
                             case "chicken strips":
                                 $recommendation_name = "Hamburger";
-                                $recommendation_image = "burger.jpg";
+                                $recommendation_image = "img/burger.jpg";
                                 break;
                 
                             case "hamburger":
                                 $recommendation_name = "Chicken Strips";
-                                $recommendation_image = "chicken2.jpeg";
+                                $recommendation_image = "img/chicken2.jpeg";
                                 break;
                         }
                     }
