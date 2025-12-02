@@ -17,10 +17,10 @@
 <header class="header">
     <a href="#" class="logo">D & D Foods</a>
     <nav class="navbar">
-        <a href="index.html">Menu</a>
+        <a href="index.php">Menu</a>
         <a href="#" class="active">Checkout</a>
         <a href="history.php">History</a>
-        <a href="login.html">Login</a>
+        <a href="login.php">Login</a>
     </nav>
 </header>
 

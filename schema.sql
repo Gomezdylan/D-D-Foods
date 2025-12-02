@@ -3,14 +3,16 @@ CREATE DATABASE IF NOT EXISTS restaurant_db;
 use restaurant_db;
 
 CREATE TABLE
-    Person (
+    if NOT EXISTS Person (
         person_id INT AUTO_INCREMENT PRIMARY KEY,
-        person_name VARCHAR(100) NOT NULL
+        person_name VARCHAR(100) NOT NULL,
+        email VARCHAR(256) NOT NULL,
+        password VARCHAR(256) NOT NULL
     );
 
 CREATE TABLE
-    Food (
-        food_id INT AUTO_INCREMENT PRIMARFY KEY,
+    if NOT EXISTS Food (
+        food_id INT AUTO_INCREMENT PRIMARY KEY,
         food_name VARCHAR(100) NOT NULL,
         category VARCHAR(50),
         current_price DECIMAL(6, 2) NOT NULL,
@@ -26,7 +28,7 @@ VALUES
     ('Chicken Strips', 'entree', 9.99, 600);
 
 CREATE TABLE
-    Orders (
+    if NOT EXISTS Orders (
         order_id INT AUTO_INCREMENT PRIMARY KEY,
         person_id INT NOT NULL,
         status ENUM ('paid', 'unpaid') DEFAULT 'unpaid',
@@ -34,7 +36,7 @@ CREATE TABLE
     );
 
 CREATE TABLE
-    Order_Items (
+    if NOT EXISTS Order_Items (
         order_items_id INT AUTO_INCREMENT PRIMARY KEY,
         order_id INT NOT NULL,
         food_id INT NOT NULL,

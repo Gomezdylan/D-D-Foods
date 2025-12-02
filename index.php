@@ -14,7 +14,7 @@
             <a href="index.php" class="active">Menu</a>
             <a href="checkout.php">Checkout</a>
             <a href="history.html">History</a>
-            <a href="login.html">Login</a>
+            <a href="login.php">Login</a>
         </nav>
     </header>
 

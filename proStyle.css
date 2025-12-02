@@ -136,3 +136,21 @@ section button{
 body{
     background-color: lightgray;
 }
+
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+    box-shadow: rgba(100,100,111,.2) 0px 7px 29px 0px;
+}
+
+.form-group{
+    margin-bottom:30px;
+}
+
+table, tr, td, th{
+    border: 2px solid;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
